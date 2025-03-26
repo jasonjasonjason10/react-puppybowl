@@ -1,22 +1,29 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes, Route, Link } from "react-router-dom";
+import AllPlayers from "./components/AllPlayers";
+import NewPlayerForm from "./components/NewPlayerForm";
+import NavBar from "./components/NavBar";
+import { Button } from "@mui/material";
+import "./App.css";
+import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-  
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-     
-      </div>
-     
-    </>
-  )
+    <div className="app-wrapper">
+      <NavBar />
+      <h1>PUPPY BOWL!!!</h1>
+
+      <Link to="/new" style={{ textDecoration: "none" }}>
+        <Button variant="contained" color="primary">
+          Add New Puppy
+        </Button>
+      </Link>
+
+      <Routes>
+        <Route path="/" element={<AllPlayers />} />
+        <Route path="/new" element={<NewPlayerForm />} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
