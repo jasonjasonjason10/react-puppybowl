@@ -1,5 +1,5 @@
-const COHORT = "2502-FTB-WEB-FT";
-const baseUrl = `https://fsa-puppy-bowl.herokuapp.com/api/${COHORT}`;
+// const COHORT = "2502-FTB-WEB-FT";
+const baseUrl = `https://fsa-puppy-bowl.herokuapp.com/api/2502-FTB-ET-WEB-FT`;
 
 export async function fetchAllPlayers() {
   try {
