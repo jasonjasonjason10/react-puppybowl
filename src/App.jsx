@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app-wrapper">
       <NavBar />
-      <h1>PUPPY BOWL!!!</h1>
+      <h1>2025 PUPPY BOWL</h1>
 
       <Link to="/new" style={{ textDecoration: "none" }}>
         <Button variant="contained" color="primary">

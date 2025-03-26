@@ -16,7 +16,7 @@ const NavBar = () => {
       <AppBar position="static" sx={{ backgroundColor: "#0d1b2a" }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="h6" sx={{ fontFamily: "OpenDyslexic" }}>
-            Puppy Bowl
+            Puppy Bowl Roster
           </Typography>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
